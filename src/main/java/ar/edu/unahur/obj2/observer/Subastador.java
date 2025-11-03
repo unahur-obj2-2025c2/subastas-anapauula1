@@ -6,6 +6,9 @@ public class Subastador implements ISubastador{
     public String nombre() {
        return nombre;
     }
+    public Subastador(String nombre) {
+        this.nombre = nombre;
+    }
     @Override
     public void notificado(IProducto producto, Oferta nueva) {
         Integer valorDeUltimaOferta = nueva.getValorOfertado();
